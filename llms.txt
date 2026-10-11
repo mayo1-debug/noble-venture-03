@@ -1,0 +1,34 @@
+# Security Answer Kit
+
+> Security Answer Kit helps agencies, freelancers and small software firms (1 to 25 people) answer the vendor security questionnaires their bigger clients send. A free in-browser tool builds a one-page Security Overview and a gap list. The paid kit has 86 prefilled questionnaire answers in 16 areas, 8 security policy templates and 5 email scripts.
+
+- Free: the Security Overview builder. Runs in the browser, no account, nothing is uploaded.
+- Paid: the full kit, EUR 49 once, paid through PayPal. No subscription. 14-day refund on request.
+- Not included: certification (the kit does not make you SOC 2 or ISO 27001 certified) and legal advice.
+- Maker: an independent business in Germany (see the imprint).
+
+## Product
+
+- [Security Answer Kit, free Security Overview builder and kit](https://security.toolkitsdesk.com/): build the overview, see sample answers, buy the kit.
+
+## Guides
+
+- [Governance questions in a security questionnaire: owner, policy, certifications](https://security.toolkitsdesk.com/guides/governance.html): The 6 governance questions in the kit, what the client wants to know and what a good answer contains.
+- [People and HR security questions: training, leavers, background checks](https://security.toolkitsdesk.com/guides/people.html): The 7 people questions in the kit, what the client wants to know and what a good answer contains.
+- [Access control questions: MFA, passwords, SSO and least privilege](https://security.toolkitsdesk.com/guides/access-control.html): The 11 access control questions in the kit, what the client wants to know and what a good answer contains.
+- [Device security questions: laptop encryption, updates, MDM, lost devices](https://security.toolkitsdesk.com/guides/devices.html): The 8 devices questions in the kit, what the client wants to know and what a good answer contains.
+- [Data protection questions: location, separation, deletion and AI training](https://security.toolkitsdesk.com/guides/data-protection.html): The 8 data protection questions in the kit, what the client wants to know and what a good answer contains.
+- [Encryption questions: in transit, at rest, keys, backups and TLS versions](https://security.toolkitsdesk.com/guides/encryption.html): The 5 encryption questions in the kit, what the client wants to know and what a good answer contains.
+- [Backup and continuity questions: restore tests, RTO, RPO, key person risk](https://security.toolkitsdesk.com/guides/backups-and-continuity.html): The 6 backups and continuity questions in the kit, what the client wants to know and what a good answer contains.
+- [Logging and monitoring questions: audit logs, alerts, retention](https://security.toolkitsdesk.com/guides/logging-and-monitoring.html): The 4 logging and monitoring questions in the kit, what the client wants to know and what a good answer contains.
+- [Vulnerability management questions: patching, pen tests, disclosure](https://security.toolkitsdesk.com/guides/vulnerability-management.html): The 5 vulnerability management questions in the kit, what the client wants to know and what a good answer contains.
+- [Secure development questions: code review, environments, secrets](https://security.toolkitsdesk.com/guides/secure-development.html): The 4 secure development questions in the kit, what the client wants to know and what a good answer contains.
+- [Incident response questions: plan, 72-hour notice, breach history, contacts](https://security.toolkitsdesk.com/guides/incident-response.html): The 5 incident response questions in the kit, what the client wants to know and what a good answer contains.
+- [Vendor and subprocessor questions: lists, assessments, notice of changes](https://security.toolkitsdesk.com/guides/vendors-and-subprocessors.html): The 3 vendors and subprocessors questions in the kit, what the client wants to know and what a good answer contains.
+- [Privacy and GDPR questions: DPA, transfers outside the EU, DPO, data subject requests](https://security.toolkitsdesk.com/guides/privacy-and-gdpr.html): The 5 privacy questions in the kit, what the client wants to know and what a good answer contains.
+- [Physical security questions for remote and small teams](https://security.toolkitsdesk.com/guides/physical-security.html): The 3 physical security questions in the kit, what the client wants to know and what a good answer contains.
+- [Change management questions: tracked changes, rollback, emergency fixes](https://security.toolkitsdesk.com/guides/change-management.html): The 3 change management questions in the kit, what the client wants to know and what a good answer contains.
+- [AI tool questions in a security questionnaire: policy, client data, subprocessors](https://security.toolkitsdesk.com/guides/ai-tools.html): The 3 ai tools questions in the kit, what the client wants to know and what a good answer contains.
+- [How to answer a security questionnaire as a small software company](https://security.toolkitsdesk.com/guides/how-to-answer-a-security-questionnaire.html): Six steps for a small team: overview first, mark what is true, honest answers for gaps with a date, reuse.
+- [Free Security Overview builder for small vendors](https://security.toolkitsdesk.com/guides/free-security-overview-builder.html): Free in-browser tool: a one-page Security Overview and a gap list with fix steps. Nothing is uploaded.
+- [Security questionnaire guides for small software companies](https://security.toolkitsdesk.com/guides/): hub page that lists every guide.

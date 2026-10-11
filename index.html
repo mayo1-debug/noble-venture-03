@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Security Answer Kit: answer client security questionnaires, honestly</title>
+<meta name="description" content="For agencies, freelancers and small software firms. Build a free Security Overview in your browser, then get 86 prefilled questionnaire answers, 8 security policy templates and 5 email scripts for EUR 49.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://security.toolkitsdesk.com/">
+<meta property="og:title" content="Security Answer Kit: answer client security questionnaires, honestly">
+<meta property="og:description" content="For agencies, freelancers and small software firms. Build a free Security Overview in your browser, then get 86 prefilled questionnaire answers, 8 security policy templates and 5 email scripts for EUR 49.">
+<meta property="og:image" content="https://security.toolkitsdesk.com/share.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Security Answer Kit: answer client security questionnaires, honestly">
+<meta name="twitter:description" content="For agencies, freelancers and small software firms. Build a free Security Overview in your browser, then get 86 prefilled questionnaire answers, 8 security policy templates and 5 email scripts for EUR 49.">
+<meta name="twitter:image" content="https://security.toolkitsdesk.com/share.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="home">
+<header class="top"><div class="wrap">
+  <a class="brand" href="./">Security <span>Answer</span> Kit</a>
+  <nav><a href="#builder">Free overview</a><a href="#kit">The kit</a><a href="#buy">Buy</a><a href="#faq">FAQ</a></nav>
+</div></header>
+
+<main>
+<div class="wrap hero">
+  <h1>A client sent you a 150-question security questionnaire. Answer it this afternoon, honestly.</h1>
+  <p class="lead">For agencies, freelancers and small software firms (1 to 25 people) that sell to companies with a security team. Describe what you actually do once. Get a one-page Security Overview for free, then prefilled answers and policies you can send.</p>
+  <div class="cta">
+    <a class="btn" href="#builder">Build my free Security Overview</a>
+    <a class="btn alt" href="#buy">Get the full kit, EUR 49</a>
+  </div>
+  <p class="hint">Runs in your browser. Your answers stay on this device. No account.</p>
+</div>
+
+<section><div class="wrap">
+  <h2>The problem</h2>
+  <p>Bigger clients send vendor security questionnaires before they sign. They are long, they ask about policies a small team never wrote down, and they arrive when you are busy with the actual work. Small vendors on Hacker News describe it like this (public comments, not customers of this kit):</p>
+  <p class="quote">"Whenever we get a client with around 100+ head count, they ask to fill their own security assessment. It takes a lot of time as it has sometimes 100+ questions." <a href="https://news.ycombinator.com/item?id=36488436" rel="noopener">source</a></p>
+  <p class="quote">"I'm just filling in the questionnaires instead for now (and losing some customers who would be too big anyway)" <a href="https://news.ycombinator.com/item?id=48146708" rel="noopener">source</a></p>
+  <p>Platforms that automate this cost thousands per year. This kit costs EUR 49 once and covers what a small team needs.</p>
+</div></section>
+
+<section id="builder"><div class="wrap">
+  <h2>Free: build your Security Overview</h2>
+  <p class="hint">Answer what is true today. The overview updates as you go. Nothing is uploaded. <a href="#overview-out">Skip to your overview</a></p>
+  <div class="builder">
+    <form id="profile" onsubmit="return false"></form>
+    <div class="out" id="overview-out">
+      <h3>Your Security Overview</h3>
+      <p class="hint" id="progress"></p>
+      <textarea id="overview" rows="18" readonly aria-label="Security Overview text"></textarea>
+      <div class="actions">
+        <button type="button" class="small" id="copy-ov">Copy</button>
+        <button type="button" class="small" id="dl-ov">Download .txt</button>
+        <button type="button" class="small" id="print-ov">Print or save as PDF</button>
+      </div>
+      <h3>Gaps to close</h3>
+      <div id="gaps"></div>
+      <p><a class="btn" href="#buy">Turn this into full answers and policies, EUR 49</a></p>
+    </div>
+  </div>
+</div></section>
+
+<section id="kit"><div class="wrap">
+  <h2>What the full kit adds</h2>
+  <div class="grid3">
+    <div class="card"><h3>86 prefilled answers</h3><p>Common questionnaire questions in 16 areas (access, devices, encryption, backups, change management, incidents, vendors, AI tools, privacy and more). Each answer is built from your profile, so it says what you actually do. Copy one by one or export all as CSV for the client's spreadsheet.</p></div>
+    <div class="card"><h3>8 policy templates</h3><p>Information security, access control, acceptable use, incident response, backup and continuity, data retention, vendor management, secure development. Prefilled with your company name, owner and dates. Download as .md or as .html that opens in Word or Google Docs.</p></div>
+    <div class="card"><h3>5 email scripts and a gap plan</h3><p>Send your overview first, ask which sections apply, ask for more time, answer "do you have SOC 2?" honestly. For every "no", an honest interim answer with your target date and a concrete fix step.</p></div>
+  </div>
+  <h3 style="margin-top:24px">Sample answers from the kit (filled from your profile above)</h3>
+  <div id="samples"></div>
+</div></section>
+
+<section id="buy"><div class="wrap">
+  <h2>Get the kit</h2>
+  <div class="buybox card">
+    <div class="price">EUR 49</div>
+    <p>One-time payment. No VAT is charged (small business under Section 19 UStG). Instant access in this browser. No subscription.</p>
+    <label>Company name and address for your invoice (optional)<br>
+      <input type="text" id="vatid" maxlength="100" placeholder="Acme Web Studio GmbH, Example Street 1, Berlin"></label>
+    <label class="check"><input type="checkbox" id="consent"> <span>I want access right away. I agree that the kit is delivered immediately and I understand that this ends my 14-day right of withdrawal. The voluntary refund in the <a href="legal/refund.html">refund policy</a> still applies.</span></label>
+    <div id="checkout-status" class="notice" hidden></div>
+    <div id="paypal-buttons"></div>
+    <p class="hint">Payment by PayPal or card through PayPal. By buying you accept the <a href="legal/terms.html">terms</a>. If the kit does not help you, you get a full refund within 14 days (<a href="legal/refund.html">refund policy</a>).</p>
+  </div>
+  <div id="thanks" class="success" hidden></div>
+</div></section>
+
+<section id="faq"><div class="wrap">
+  <h2>Questions</h2>
+  <details class="faq"><summary>Is this a certification or legal advice?</summary><p>No. The kit helps you describe your real security practices clearly and gives you templates to write them down. It does not make you SOC 2 or ISO 27001 certified, and it is not legal advice. Your answers must match what you actually do.</p></details>
+  <details class="faq"><summary>Does my data leave my browser?</summary><p>No. Your profile is stored in your browser's local storage on this device. The site has no server that receives it. Payment details go to PayPal only.</p></details>
+  <details class="faq"><summary>The client uses their own spreadsheet. Does this still help?</summary><p>Yes. Questions are worded differently in every questionnaire, but they ask about the same controls. Find the matching answer in the kit, copy it, or export all answers as CSV and paste them into the client's sheet.</p></details>
+  <details class="faq"><summary>What if I answered "no" to many controls?</summary><p>The kit writes honest answers for missing controls, with your target date, and the gap plan lists the fix steps. Most fixes for a small team are settings you can change in an hour (MFA, disk encryption, automatic updates).</p></details>
+  <details class="faq"><summary>How do I get access again later or on another device?</summary><p>Access is unlocked in the browser you paid with. Keep your PayPal order ID. On another device, open the kit page and enter the order ID. If anything is missing, contact support with your order ID.</p></details>
+  <details class="faq"><summary>Who makes this?</summary><p>A small independent business in Germany. See the <a href="legal/imprint.html">imprint</a>.</p></details>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <a href="legal/imprint.html">Imprint</a><a href="legal/terms.html">Terms</a><a href="legal/privacy.html">Privacy</a><a href="legal/refund.html">Refunds</a><a href="guides/">Guides</a><a href="kit/">Kit (buyers)</a>
+  <p>Sold by Mario Behrends, Germany (<a href="legal/imprint.html">imprint</a>). Support: <a href="mailto:support.toolkits.desk@gmail.com">support.toolkits.desk@gmail.com</a>, answered within 2 working days.</p>
+  <p>Security Answer Kit does not certify you and is not legal advice. Prices in EUR.</p>
+</div></footer>
+
+<script src="config.js"></script>
+<script src="assets/profile.js"></script>
+<script src="assets/overview.js"></script>
+<script src="assets/kit-answers.js"></script>
+<script src="assets/kit.js"></script>
+<script src="assets/home.js"></script>
+<script src="assets/checkout.js"></script>
+<script src="assets/analytics.js"></script>
+</body>
+</html>

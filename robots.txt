@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /kit/
+Sitemap: https://security.toolkitsdesk.com/sitemap.xml

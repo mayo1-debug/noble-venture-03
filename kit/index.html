@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your kit: Security Answer Kit</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="kit">
+<header class="top"><div class="wrap">
+  <a class="brand" href="../">Security <span>Answer</span> Kit</a>
+  <nav><a href="../#builder">Free overview</a><a href="../#buy">Buy</a></nav>
+</div></header>
+
+<main class="wrap" style="padding-top:24px;padding-bottom:40px">
+  <div id="locked" hidden>
+    <h1>The kit is not unlocked in this browser</h1>
+    <p>If you bought the kit in another browser or on another device, enter your PayPal order ID below. You find it on the thank-you screen and in your PayPal receipt.</p>
+    <p><input type="text" id="order-in" placeholder="PayPal order ID" style="padding:8px 10px;border:1px solid #dfe2e8;border-radius:6px;font:inherit;max-width:320px;width:100%"> <button type="button" class="small" id="order-go">Unlock</button></p>
+    <p id="order-msg" class="hint"></p>
+    <p>Not bought yet? <a class="btn" href="../#buy">Get the kit, EUR 49</a></p>
+  </div>
+
+  <div id="unlocked" hidden>
+    <div id="thanks" class="success" hidden></div>
+    <h1>Your Security Answer Kit</h1>
+    <p class="hint">Everything below is built from your profile. Edit the profile and the answers, policies and emails update. Your profile stays in this browser.</p>
+
+    <details class="faq" id="profile-box"><summary>Your profile (edit answers here)</summary><form id="profile" onsubmit="return false"></form></details>
+
+    <div class="tabs" role="tablist">
+      <button type="button" role="tab" data-tab="answers" aria-selected="true">Answers</button>
+      <button type="button" role="tab" data-tab="policies" aria-selected="false">Policies</button>
+      <button type="button" role="tab" data-tab="emails" aria-selected="false">Email scripts</button>
+      <button type="button" role="tab" data-tab="gaps" aria-selected="false">Gap plan</button>
+      <button type="button" role="tab" data-tab="overview" aria-selected="false">Overview</button>
+    </div>
+
+    <div data-panel="answers">
+      <p><button type="button" class="small" id="csv">Download all answers (.csv)</button> <button type="button" class="small" id="print-ans">Print or save as PDF</button></p>
+      <div id="answers"></div>
+    </div>
+    <div data-panel="policies" hidden>
+      <p class="hint">Each policy describes a clear target state. Edit anything that does not match what you do before you send it to a client.</p>
+      <div id="policies"></div>
+    </div>
+    <div data-panel="emails" hidden><div id="emails"></div></div>
+    <div data-panel="gaps" hidden><p class="hint">Every control you marked as missing or partly in place, with a concrete fix step.</p><div id="gaps"></div></div>
+    <div data-panel="overview" hidden><textarea id="overview" rows="22" readonly style="width:100%;font:13px/1.5 ui-monospace,Menlo,Consolas,monospace;border:1px solid #dfe2e8;border-radius:8px;padding:10px"></textarea><p><button type="button" class="small" id="copy-ov">Copy</button></p></div>
+    <p class="hint" style="margin-top:28px">Support: keep your PayPal order ID (<span id="order-id"></span>). If anything is missing, contact <span class="support-contact"></span> with that order ID.</p>
+  </div>
+</main>
+
+<footer><div class="wrap">
+  <a href="../legal/imprint.html">Imprint</a><a href="../legal/terms.html">Terms</a><a href="../legal/privacy.html">Privacy</a><a href="../legal/refund.html">Refunds</a>
+</div></footer>
+
+<script src="../config.js"></script>
+<script src="../assets/profile.js"></script>
+<script src="../assets/overview.js"></script>
+<script src="../assets/kit-answers.js"></script>
+<script src="../assets/kit-docs.js"></script>
+<script src="../assets/kit.js"></script>
+<script src="../assets/kitpage.js"></script>
+<script src="../assets/analytics.js"></script>
+</body>
+</html>

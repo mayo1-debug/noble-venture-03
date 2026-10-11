@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Secure development questions: code review, environments, secrets</title>
+<meta name="description" content="Do you follow a secure development process, separate environments, keep production data out of tests and protect API keys? How to answer these 4 questions.">
+<link rel="canonical" href="https://security.toolkitsdesk.com/guides/secure-development.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://security.toolkitsdesk.com/guides/secure-development.html">
+<meta property="og:title" content="Secure development questions: code review, environments, secrets">
+<meta property="og:description" content="Do you follow a secure development process, separate environments, keep production data out of tests and protect API keys? How to answer these 4 questions.">
+<meta property="og:image" content="https://security.toolkitsdesk.com/share.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "Secure development questions: code review, environments, secrets",
+ "description": "Do you follow a secure development process, separate environments, keep production data out of tests and protect API keys? How to answer these 4 questions.",
+ "url": "https://security.toolkitsdesk.com/guides/secure-development.html",
+ "mainEntityOfPage": "https://security.toolkitsdesk.com/guides/secure-development.html",
+ "datePublished": "2026-10-11",
+ "dateModified": "2026-10-11",
+ "inLanguage": "en",
+ "author": {
+  "@type": "Organization",
+  "name": "Security Answer Kit"
+ },
+ "publisher": {
+  "@type": "Organization",
+  "name": "Security Answer Kit",
+  "url": "https://security.toolkitsdesk.com/"
+ }
+}
+</script>
+</head>
+<body data-page="guide">
+<header class="top shared"><div class="wrap">
+  <a class="brand" href="../?src=seo">Security <span>Answer</span> Kit</a>
+  <nav><a href="./">Guides</a><a href="../?src=seo#builder">Free overview</a><a href="../?src=seo#buy">Buy</a></nav>
+</div></header>
+
+<main>
+<div class="wrap">
+<p class="hint shared"><a href="./">All guides</a></p>
+<h1>Secure development questions in a vendor questionnaire</h1>
+<p class="lead">Secure development questions are aimed at teams that write software: review before release, separate environments, test data and secret handling. Four questions cover most questionnaires.</p>
+<h2>What the client wants to know</h2>
+<p>The client wants to know that one person cannot push untested code to production, that real client data does not leak into test systems, and that API keys are not sitting in a repository. Clear, short answers about your actual workflow are enough.</p>
+<h2>The 4 questions as clients phrase them</h2>
+<p>The kit covers 4 questions in this area. The wording varies between questionnaires, the control behind it does not.</p>
+<ol><li>Do you follow a secure development process?</li><li>Is production data used in development or testing?</li><li>Are development, test and production environments separated?</li><li>How do you protect secrets such as API keys?</li></ol>
+<h2>What a good answer contains</h2>
+<ul><li>Process: code is reviewed by a second person or by automated checks before release, the main branch is protected, secrets are not stored in code.</li><li>Environments: production is separate from development and test, with its own credentials, and only named people can deploy to production.</li><li>Test data: development and testing use test data. If production data is ever needed to fix a problem, it is limited to what is needed and removed afterwards.</li><li>Secrets: kept in the hosting provider&#x27;s secret store or the password manager, never in code repositories, and rotated when someone with access leaves.</li></ul>
+<h2>Watch out for</h2>
+<p>If review is not enforced yet, say code is tested before release and that required review or automated checks are being switched on. Branch protection is a setting, not a project.</p>
+<h2>Controls behind these answers</h2>
+<p>These are the controls the free Security Overview builder asks about for this area. Each line is the statement you can make once the control is in place, followed by the fix step if it is not.</p>
+<ul><li><strong>Development:</strong> Code is reviewed by a second person or by automated checks before release. <span class="fix">If not yet: Protect the main branch and require a review or passing checks before merge.</span></li><li><strong>Access:</strong> All staff use a password manager. Passwords are not shared in chat or documents. <span class="fix">If not yet: Roll out a password manager for everyone and move shared logins into shared vaults.</span></li></ul>
+<h2>Example: how a prepared answer opens</h2>
+<p class="hint">Question: How do you protect secrets such as API keys?</p>
+<p class="quote">Secrets are kept in the hosting provider&#x27;s secret store or the company password manager, never in code repositories.</p>
+<p class="hint">This is the first sentence only. In the kit the full answer is built from your profile, with an honest variant for each control you do not have yet.</p>
+<p class="shared"><a href="./">Back to all guides</a></p>
+<p class="shared">Related: <a href="vulnerability-management.html">Vulnerability management</a> <a href="change-management.html">Change management</a></p>
+<aside class="card shared" style="margin:28px 0">
+<h2>Try it on your own answers</h2>
+<p>The free Security Overview builder turns what you actually do into a one-page overview and a list of gaps with fix steps. It runs in your browser and uploads nothing. The full kit adds prefilled answers to the kit's 86 questions, 8 policy templates and 5 email scripts for EUR 49.</p>
+<p><a class="btn" href="../?src=seo#builder">Build my free Security Overview</a> <a class="btn alt" href="../?src=seo#buy">Get the full kit, EUR 49</a></p>
+</aside>
+<p class="hint shared">Guidance and templates, not legal advice. The kit does not certify you. Your answers must match what you actually do.</p>
+</div>
+</main>
+
+<footer class="shared"><div class="wrap">
+  <a href="./">All guides</a><a href="../legal/imprint.html?src=seo">Imprint</a><a href="../legal/terms.html?src=seo">Terms</a><a href="../legal/privacy.html?src=seo">Privacy</a><a href="../legal/refund.html?src=seo">Refunds</a>
+  <p>Sold by Mario Behrends, Germany (<a href="../legal/imprint.html?src=seo">imprint</a>). Prices in EUR.</p>
+</div></footer>
+
+<script src="../config.js"></script>
+<script src="../assets/analytics.js"></script>
+</body>
+</html>

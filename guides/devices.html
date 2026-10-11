@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Device security questions: laptop encryption, updates, MDM, lost devices</title>
+<meta name="description" content="Disk encryption, automatic updates, anti-malware, MDM, remote wipe and BYOD. What clients ask about your laptops and how to answer honestly.">
+<link rel="canonical" href="https://security.toolkitsdesk.com/guides/devices.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://security.toolkitsdesk.com/guides/devices.html">
+<meta property="og:title" content="Device security questions: laptop encryption, updates, MDM, lost devices">
+<meta property="og:description" content="Disk encryption, automatic updates, anti-malware, MDM, remote wipe and BYOD. What clients ask about your laptops and how to answer honestly.">
+<meta property="og:image" content="https://security.toolkitsdesk.com/share.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "Device security questions: laptop encryption, updates, MDM, lost devices",
+ "description": "Disk encryption, automatic updates, anti-malware, MDM, remote wipe and BYOD. What clients ask about your laptops and how to answer honestly.",
+ "url": "https://security.toolkitsdesk.com/guides/devices.html",
+ "mainEntityOfPage": "https://security.toolkitsdesk.com/guides/devices.html",
+ "datePublished": "2026-10-11",
+ "dateModified": "2026-10-11",
+ "inLanguage": "en",
+ "author": {
+  "@type": "Organization",
+  "name": "Security Answer Kit"
+ },
+ "publisher": {
+  "@type": "Organization",
+  "name": "Security Answer Kit",
+  "url": "https://security.toolkitsdesk.com/"
+ }
+}
+</script>
+</head>
+<body data-page="guide">
+<header class="top shared"><div class="wrap">
+  <a class="brand" href="../?src=seo">Security <span>Answer</span> Kit</a>
+  <nav><a href="./">Guides</a><a href="../?src=seo#builder">Free overview</a><a href="../?src=seo#buy">Buy</a></nav>
+</div></header>
+
+<main>
+<div class="wrap">
+<p class="hint shared"><a href="./">All guides</a></p>
+<h1>Device security questions in a vendor questionnaire</h1>
+<p class="lead">Device questions ask whether laptops are encrypted, kept up to date and manageable when lost. A small team can answer them with a few settings that take an hour to change.</p>
+<h2>What the client wants to know</h2>
+<p>Laptops are where client data ends up in practice. The client wants to know that a lost or stolen laptop does not leak anything, that updates are installed, and whether personal devices (BYOD) can touch their data. Critical updates installed quickly are a detail they look for.</p>
+<h2>The 8 questions as clients phrase them</h2>
+<p>The kit covers 8 questions in this area. The wording varies between questionnaires, the control behind it does not.</p>
+<ol><li>Are company laptops and workstations encrypted?</li><li>How do you keep operating systems and software up to date?</li><li>Do you use anti-malware or endpoint protection?</li><li>What happens if a laptop is lost or stolen?</li><li>Are company devices centrally managed (MDM)?</li><li>Can you remotely lock or wipe a lost or stolen device?</li><li>Are personal devices (BYOD) allowed to access our data?</li><li>How quickly are critical security patches applied to devices?</li></ol>
+<h2>What a good answer contains</h2>
+<ul><li>Encryption: full-disk encryption (FileVault on macOS, BitLocker on Windows) on every work laptop, plus an automatic screen lock.</li><li>Updates: automatic updates on for the operating system and browsers on all work devices.</li><li>Anti-malware: built-in protection of current operating systems counts, kept current through automatic updates.</li><li>Lost device: the disk is encrypted, the loss is reported at once, passwords and sessions are revoked, the incident process is followed.</li><li>MDM and remote wipe: if work laptops are enrolled in device management, say it enforces encryption, screen lock and updates. If not, say it is planned.</li><li>BYOD: pick one honest answer. Either client data is accessed only from company devices, or personal devices must meet stated conditions.</li></ul>
+<h2>Watch out for</h2>
+<p>Do not answer yes to remote wipe if you have no device management. The honest answer is that the encrypted disk protects the data and all sessions are revoked, with remote wipe planned.</p>
+<h2>Controls behind these answers</h2>
+<p>These are the controls the free Security Overview builder asks about for this area. Each line is the statement you can make once the control is in place, followed by the fix step if it is not.</p>
+<ul><li><strong>Devices:</strong> Every work laptop has full-disk encryption and an automatic screen lock. <span class="fix">If not yet: Switch on FileVault (macOS) or BitLocker (Windows) and a screen lock of 5 minutes or less on every work laptop.</span></li><li><strong>Devices:</strong> Operating system and browser updates install automatically on work devices. <span class="fix">If not yet: Switch on automatic updates for the operating system and browsers on every work device.</span></li><li><strong>Devices:</strong> Work laptops are centrally managed, so encryption, screen lock and updates are enforced and a lost device can be locked or wiped remotely. <span class="fix">If not yet: Enroll work laptops in a device management tool (for example the one included in Google Workspace or Microsoft 365 business plans) and enforce encryption, screen lock and updates.</span></li></ul>
+<h2>Example: how a prepared answer opens</h2>
+<p class="hint">Question: How do you keep operating systems and software up to date?</p>
+<p class="quote">Automatic updates are switched on for operating systems and browsers on all work devices.</p>
+<p class="hint">This is the first sentence only. In the kit the full answer is built from your profile, with an honest variant for each control you do not have yet.</p>
+<p class="shared"><a href="./">Back to all guides</a></p>
+<p class="shared">Related: <a href="access-control.html">Access control</a> <a href="backups-and-continuity.html">Backups and continuity</a></p>
+<aside class="card shared" style="margin:28px 0">
+<h2>Try it on your own answers</h2>
+<p>The free Security Overview builder turns what you actually do into a one-page overview and a list of gaps with fix steps. It runs in your browser and uploads nothing. The full kit adds prefilled answers to the kit's 86 questions, 8 policy templates and 5 email scripts for EUR 49.</p>
+<p><a class="btn" href="../?src=seo#builder">Build my free Security Overview</a> <a class="btn alt" href="../?src=seo#buy">Get the full kit, EUR 49</a></p>
+</aside>
+<p class="hint shared">Guidance and templates, not legal advice. The kit does not certify you. Your answers must match what you actually do.</p>
+</div>
+</main>
+
+<footer class="shared"><div class="wrap">
+  <a href="./">All guides</a><a href="../legal/imprint.html?src=seo">Imprint</a><a href="../legal/terms.html?src=seo">Terms</a><a href="../legal/privacy.html?src=seo">Privacy</a><a href="../legal/refund.html?src=seo">Refunds</a>
+  <p>Sold by Mario Behrends, Germany (<a href="../legal/imprint.html?src=seo">imprint</a>). Prices in EUR.</p>
+</div></footer>
+
+<script src="../config.js"></script>
+<script src="../assets/analytics.js"></script>
+</body>
+</html>

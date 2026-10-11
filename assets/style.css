@@ -1,0 +1,86 @@
+:root {
+  --bg: #fbfbf8;
+  --fg: #1d2330;
+  --muted: #5b6475;
+  --line: #dfe2e8;
+  --card: #ffffff;
+  --accent: #1f5f4a;
+  --accent-2: #e9f3ef;
+  --warn: #8a5a00;
+  --warn-bg: #fff6e0;
+  --bad: #9b2c2c;
+  --radius: 10px;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+a { color: var(--accent); }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.btn:focus-visible { outline-color: var(--fg); }
+.wrap { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+header.top { border-bottom: 1px solid var(--line); background: var(--card); }
+header.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-top: 12px; padding-bottom: 12px; flex-wrap: wrap; }
+.brand { display: inline-block; padding: 8px 0; font-weight: 700; text-decoration: none; color: var(--fg); font-size: 18px; }
+.brand span { color: var(--accent); }
+nav a { display: inline-block; min-width: 44px; text-align: center; padding: 11px 6px; margin-left: 6px; text-decoration: none; font-size: 15px; }
+.hero { padding-top: 48px; padding-bottom: 28px; }
+.hero .cta { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 12px; }
+.hero h1 { font-size: clamp(28px, 5vw, 42px); line-height: 1.15; margin: 0 0 14px; }
+.hero p.lead { font-size: 19px; color: var(--muted); max-width: 720px; margin: 0 0 22px; }
+.btn { display: inline-flex; align-items: center; min-height: 44px; background: var(--accent); color: #fff; border: 0; border-radius: 8px; padding: 12px 18px; font-size: 16px; font-weight: 600; text-decoration: none; cursor: pointer; }
+.btn.alt { background: transparent; color: var(--accent); border: 2px solid var(--accent); }
+button.small { font-size: 14px; min-height: 44px; padding: 8px 12px; border-radius: 6px; border: 1px solid var(--line); background: var(--card); cursor: pointer; color: var(--fg); }
+button.small:hover { border-color: var(--accent); }
+section { padding: 36px 0; border-top: 1px solid var(--line); }
+section h2 { font-size: 26px; margin: 0 0 10px; }
+.grid3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; }
+.card h3 { margin: 0 0 6px; font-size: 18px; }
+.quote { border-left: 3px solid var(--accent); padding: 4px 0 4px 12px; margin: 0 0 12px; color: var(--muted); }
+.hint { color: var(--muted); font-size: 14px; }
+.builder { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; }
+@media (max-width: 820px) { .builder { grid-template-columns: 1fr; } }
+fieldset.sec { border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); margin: 0 0 14px; padding: 12px 14px; }
+fieldset.sec legend { font-weight: 700; padding: 0 6px; }
+.row { display: block; margin: 10px 0; }
+.row > span:first-child { display: block; font-size: 15px; margin-bottom: 4px; }
+.row input[type=text], .row select { width: 100%; min-height: 44px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 6px; font: inherit; background: #fff; }
+.yn .opts { display: flex; flex-wrap: wrap; gap: 0 14px; font-size: 15px; color: var(--muted); }
+.yn .opts label { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; white-space: nowrap; cursor: pointer; }
+.yn .opts input, .buybox input[type=checkbox] { width: 20px; height: 20px; margin: 0; flex: none; accent-color: var(--accent); }
+.out { position: sticky; top: 12px; }
+.out textarea, .email textarea { width: 100%; font: 13px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; border: 1px solid var(--line); border-radius: 8px; padding: 10px; background: #fff; }
+.out .actions { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 14px; }
+ol.gaps li { margin-bottom: 10px; }
+.fix { color: var(--warn); font-size: 14px; }
+.ok { color: var(--accent); }
+.price { font-size: 40px; font-weight: 700; margin: 4px 0; }
+.buybox { max-width: 520px; }
+.buybox label.check { display: flex; gap: 10px; align-items: flex-start; font-size: 15px; margin: 14px 0; cursor: pointer; }
+.buybox label.check.attention { outline: 3px solid var(--warn); outline-offset: 4px; border-radius: 4px; }
+.buybox input[type=text] { width: 100%; min-height: 44px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 6px; font: inherit; }
+#paypal-buttons { margin-top: 14px; min-height: 50px; }
+.notice { background: var(--warn-bg); color: var(--warn); border-radius: 8px; padding: 10px 12px; font-size: 14px; }
+.success { background: var(--accent-2); border: 1px solid var(--accent); border-radius: var(--radius); padding: 16px; }
+.draft-banner { background: var(--warn-bg); color: var(--warn); border: 2px dashed var(--warn); padding: 10px 14px; border-radius: 8px; font-weight: 700; margin: 16px 0; }
+details.faq, details.doc { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 0 14px; margin: 8px 0; }
+details[open] { padding-bottom: 12px; }
+details summary { cursor: pointer; font-weight: 600; padding: 11px 0; }
+details.doc pre { white-space: pre-wrap; font-size: 13px; background: #f6f7f9; padding: 10px; border-radius: 6px; max-height: 420px; overflow: auto; }
+.tabs { display: flex; flex-wrap: wrap; gap: 6px; margin: 16px 0; }
+.tabs button { min-height: 44px; padding: 8px 12px; border: 1px solid var(--line); background: var(--card); border-radius: 8px; cursor: pointer; font: inherit; }
+.tabs button[aria-selected=true] { background: var(--accent); color: #fff; border-color: var(--accent); }
+.qa { border-bottom: 1px solid var(--line); padding: 10px 0; }
+.qa .q { font-weight: 600; margin: 0 0 4px; }
+.qa .a { margin: 0 0 6px; }
+.qa.s-no .a { color: var(--bad); }
+.qa.s-partly .a { color: var(--warn); }
+.qa.s-todo .a { color: var(--muted); font-style: italic; }
+.dom { margin: 22px 0 4px; font-size: 17px; color: var(--accent); }
+.email { margin-bottom: 18px; }
+.email h2 { font-size: 16px; margin: 0 0 6px; }
+footer { border-top: 1px solid var(--line); padding: 24px 0 40px; color: var(--muted); font-size: 14px; }
+footer a { display: inline-block; min-width: 44px; padding: 12px 0; margin-right: 14px; }
+.legal h2 { font-size: 20px; margin-top: 24px; }
+.legal { padding-bottom: 40px; }
+@media print { header.top, footer, .no-print, nav { display: none !important; } body { background: #fff; } }

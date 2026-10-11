@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Logging and monitoring questions: audit logs, alerts, retention</title>
+<meta name="description" content="Do you log access, how do you detect suspicious activity, how long are logs kept, are they tamper-proof? How a small team answers these 4 questions.">
+<link rel="canonical" href="https://security.toolkitsdesk.com/guides/logging-and-monitoring.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://security.toolkitsdesk.com/guides/logging-and-monitoring.html">
+<meta property="og:title" content="Logging and monitoring questions: audit logs, alerts, retention">
+<meta property="og:description" content="Do you log access, how do you detect suspicious activity, how long are logs kept, are they tamper-proof? How a small team answers these 4 questions.">
+<meta property="og:image" content="https://security.toolkitsdesk.com/share.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "Logging and monitoring questions: audit logs, alerts, retention",
+ "description": "Do you log access, how do you detect suspicious activity, how long are logs kept, are they tamper-proof? How a small team answers these 4 questions.",
+ "url": "https://security.toolkitsdesk.com/guides/logging-and-monitoring.html",
+ "mainEntityOfPage": "https://security.toolkitsdesk.com/guides/logging-and-monitoring.html",
+ "datePublished": "2026-10-11",
+ "dateModified": "2026-10-11",
+ "inLanguage": "en",
+ "author": {
+  "@type": "Organization",
+  "name": "Security Answer Kit"
+ },
+ "publisher": {
+  "@type": "Organization",
+  "name": "Security Answer Kit",
+  "url": "https://security.toolkitsdesk.com/"
+ }
+}
+</script>
+</head>
+<body data-page="guide">
+<header class="top shared"><div class="wrap">
+  <a class="brand" href="../?src=seo">Security <span>Answer</span> Kit</a>
+  <nav><a href="./">Guides</a><a href="../?src=seo#builder">Free overview</a><a href="../?src=seo#buy">Buy</a></nav>
+</div></header>
+
+<main>
+<div class="wrap">
+<p class="hint shared"><a href="./">All guides</a></p>
+<h1>Logging and monitoring questions in a vendor questionnaire</h1>
+<p class="lead">Four questions cover logging: what is logged, how you notice something wrong, how long logs are kept and whether anyone can alter them. Small teams answer them with the audit logs and alerts their providers already offer.</p>
+<h2>What the client wants to know</h2>
+<p>The client wants evidence that if something goes wrong with their data, you can find out who did what. They do not expect a security operations centre from a small vendor. They expect audit logs switched on in the main systems and someone who receives the alerts.</p>
+<h2>The 4 questions as clients phrase them</h2>
+<p>The kit covers 4 questions in this area. The wording varies between questionnaires, the control behind it does not.</p>
+<ol><li>Do you log access to systems that hold our data?</li><li>How do you detect suspicious activity?</li><li>How long do you keep logs?</li><li>Are logs protected against tampering?</li></ol>
+<h2>What a good answer contains</h2>
+<ul><li>Logging: login and admin activity logs switched on in the email suite, code hosting and cloud accounts.</li><li>Retention: at least 90 days.</li><li>Detection: provider security alerts for suspicious logins and new admin grants, sent to a named contact, and logs checked when an alert fires.</li><li>Tamper protection: logs held by the providers&#x27; logging features, which normal user accounts cannot change or delete.</li></ul>
+<h2>Watch out for</h2>
+<p>Audit logging is often off by default. Check each main system before you answer yes. Do not claim 24/7 monitoring if no one is watching outside working hours.</p>
+<h2>Controls behind these answers</h2>
+<p>These are the controls the free Security Overview builder asks about for this area. Each line is the statement you can make once the control is in place, followed by the fix step if it is not.</p>
+<ul><li><strong>Monitoring:</strong> Login and admin activity logs are switched on in the main systems and kept for at least 90 days. <span class="fix">If not yet: Switch on audit logs in your email suite, code hosting and cloud accounts, and keep them for at least 90 days.</span></li></ul>
+<h2>Example: how a prepared answer opens</h2>
+<p class="hint">Question: How do you detect suspicious activity?</p>
+<p class="quote">Provider security alerts (suspicious logins, new admin grants, unusual activity) are switched on and go to [your security contact].</p>
+<p class="hint">This is the first sentence only. In the kit the full answer is built from your profile, with an honest variant for each control you do not have yet.</p>
+<p class="shared"><a href="./">Back to all guides</a></p>
+<p class="shared">Related: <a href="vulnerability-management.html">Vulnerability management</a> <a href="incident-response.html">Incident response</a></p>
+<aside class="card shared" style="margin:28px 0">
+<h2>Try it on your own answers</h2>
+<p>The free Security Overview builder turns what you actually do into a one-page overview and a list of gaps with fix steps. It runs in your browser and uploads nothing. The full kit adds prefilled answers to the kit's 86 questions, 8 policy templates and 5 email scripts for EUR 49.</p>
+<p><a class="btn" href="../?src=seo#builder">Build my free Security Overview</a> <a class="btn alt" href="../?src=seo#buy">Get the full kit, EUR 49</a></p>
+</aside>
+<p class="hint shared">Guidance and templates, not legal advice. The kit does not certify you. Your answers must match what you actually do.</p>
+</div>
+</main>
+
+<footer class="shared"><div class="wrap">
+  <a href="./">All guides</a><a href="../legal/imprint.html?src=seo">Imprint</a><a href="../legal/terms.html?src=seo">Terms</a><a href="../legal/privacy.html?src=seo">Privacy</a><a href="../legal/refund.html?src=seo">Refunds</a>
+  <p>Sold by Mario Behrends, Germany (<a href="../legal/imprint.html?src=seo">imprint</a>). Prices in EUR.</p>
+</div></footer>
+
+<script src="../config.js"></script>
+<script src="../assets/analytics.js"></script>
+</body>
+</html>

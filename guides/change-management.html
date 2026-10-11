@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Change management questions: tracked changes, rollback, emergency fixes</title>
+<meta name="description" content="Is every production change tracked, can it be rolled back, how are emergency changes handled? How a small team answers these 3 questions.">
+<link rel="canonical" href="https://security.toolkitsdesk.com/guides/change-management.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://security.toolkitsdesk.com/guides/change-management.html">
+<meta property="og:title" content="Change management questions: tracked changes, rollback, emergency fixes">
+<meta property="og:description" content="Is every production change tracked, can it be rolled back, how are emergency changes handled? How a small team answers these 3 questions.">
+<meta property="og:image" content="https://security.toolkitsdesk.com/share.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "Change management questions: tracked changes, rollback, emergency fixes",
+ "description": "Is every production change tracked, can it be rolled back, how are emergency changes handled? How a small team answers these 3 questions.",
+ "url": "https://security.toolkitsdesk.com/guides/change-management.html",
+ "mainEntityOfPage": "https://security.toolkitsdesk.com/guides/change-management.html",
+ "datePublished": "2026-10-11",
+ "dateModified": "2026-10-11",
+ "inLanguage": "en",
+ "author": {
+  "@type": "Organization",
+  "name": "Security Answer Kit"
+ },
+ "publisher": {
+  "@type": "Organization",
+  "name": "Security Answer Kit",
+  "url": "https://security.toolkitsdesk.com/"
+ }
+}
+</script>
+</head>
+<body data-page="guide">
+<header class="top shared"><div class="wrap">
+  <a class="brand" href="../?src=seo">Security <span>Answer</span> Kit</a>
+  <nav><a href="./">Guides</a><a href="../?src=seo#builder">Free overview</a><a href="../?src=seo#buy">Buy</a></nav>
+</div></header>
+
+<main>
+<div class="wrap">
+<p class="hint shared"><a href="./">All guides</a></p>
+<h1>Change management questions in a vendor questionnaire</h1>
+<p class="lead">Change management questions ask whether production changes are tracked and reversible, including the urgent ones made at night. Version control and tickets are usually enough.</p>
+<h2>What the client wants to know</h2>
+<p>The client wants to know that a change that breaks things can be traced to who made it and undone, and that the emergency exception does not become a back door. A short, concrete description of your pull request or ticket flow answers all three questions.</p>
+<h2>The 3 questions as clients phrase them</h2>
+<p>The kit covers 3 questions in this area. The wording varies between questionnaires, the control behind it does not.</p>
+<ol><li>Do you have a change management process for production systems?</li><li>Can changes to production be rolled back?</li><li>How are emergency changes handled?</li></ol>
+<h2>What a good answer contains</h2>
+<ul><li>Tracking: every production change is recorded in a ticket or pull request, with a short description, the person who made it and the date.</li><li>Rollback: changes live in version control or the provider&#x27;s history, so a change can be reverted to the previous version.</li><li>Emergency changes: recorded like every other change, so they can be reviewed and rolled back afterwards.</li></ul>
+<h2>Watch out for</h2>
+<p>If some system has no history at all, say which one and that version control or change history is being set up. Do not generalise from your best repository.</p>
+<h2>Controls behind these answers</h2>
+<p>These are the controls the free Security Overview builder asks about for this area. Each line is the statement you can make once the control is in place, followed by the fix step if it is not.</p>
+<ul><li><strong>Development:</strong> Every change to production is tracked in a ticket or pull request and can be rolled back. <span class="fix">If not yet: Make every production change go through a ticket or pull request, and keep version history so a change can be reverted.</span></li></ul>
+<h2>Example: how a prepared answer opens</h2>
+<p class="hint">Question: How are emergency changes handled?</p>
+<p class="quote">Emergency changes are recorded in a ticket or pull request like every other change, so they can be reviewed and rolled back.</p>
+<p class="hint">This is the first sentence only. In the kit the full answer is built from your profile, with an honest variant for each control you do not have yet.</p>
+<p class="shared"><a href="./">Back to all guides</a></p>
+<p class="shared">Related: <a href="secure-development.html">Secure development</a> <a href="backups-and-continuity.html">Backups and continuity</a></p>
+<aside class="card shared" style="margin:28px 0">
+<h2>Try it on your own answers</h2>
+<p>The free Security Overview builder turns what you actually do into a one-page overview and a list of gaps with fix steps. It runs in your browser and uploads nothing. The full kit adds prefilled answers to the kit's 86 questions, 8 policy templates and 5 email scripts for EUR 49.</p>
+<p><a class="btn" href="../?src=seo#builder">Build my free Security Overview</a> <a class="btn alt" href="../?src=seo#buy">Get the full kit, EUR 49</a></p>
+</aside>
+<p class="hint shared">Guidance and templates, not legal advice. The kit does not certify you. Your answers must match what you actually do.</p>
+</div>
+</main>
+
+<footer class="shared"><div class="wrap">
+  <a href="./">All guides</a><a href="../legal/imprint.html?src=seo">Imprint</a><a href="../legal/terms.html?src=seo">Terms</a><a href="../legal/privacy.html?src=seo">Privacy</a><a href="../legal/refund.html?src=seo">Refunds</a>
+  <p>Sold by Mario Behrends, Germany (<a href="../legal/imprint.html?src=seo">imprint</a>). Prices in EUR.</p>
+</div></footer>
+
+<script src="../config.js"></script>
+<script src="../assets/analytics.js"></script>
+</body>
+</html>
