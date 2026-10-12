@@ -84,3 +84,31 @@ footer a { display: inline-block; min-width: 44px; padding: 12px 0; margin-right
 .legal h2 { font-size: 20px; margin-top: 24px; }
 .legal { padding-bottom: 40px; }
 @media print { header.top, footer, .no-print, nav { display: none !important; } body { background: #fff; } }
+/* Brand layer, 12 October 2026 (Operation-Noble standards/design): Security Answer Kit is precise and
+   calm, for small vendors facing a client's security team. Space Grotesk and Inter, self-hosted (OFL).
+   Deep navy, mint and cool grey. Motif: a dark console hero with a dot grid and checkmarks. */
+@font-face{font-family:"Space Grotesk";src:url("../fonts/space-grotesk-latin-600-normal.woff2") format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"Space Grotesk";src:url("../fonts/space-grotesk-latin-700-normal.woff2") format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"Inter";src:url("../fonts/inter-latin-400-normal.woff2") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Inter";src:url("../fonts/inter-latin-600-normal.woff2") format("woff2");font-weight:600 700;font-display:swap}
+:root{--bg:#f3f6f9;--fg:#0f1b2a;--muted:#4b5a6b;--line:#d8e0e8;--card:#ffffff;--accent:#0b6b4f;--accent-2:#e3f6ee;--navy:#0b1f33;--mint:#34d399;--radius:6px}
+body{font-family:"Inter",ui-sans-serif,system-ui,sans-serif}
+h1,h2,h3,.brand,.price,legend{font-family:"Space Grotesk",ui-sans-serif,system-ui,sans-serif}
+.brand{display:inline-block;padding:8px 0;line-height:28px;min-height:44px;letter-spacing:-.01em}
+.brand::before{content:"✓";display:inline-block;text-align:center;line-height:26px;vertical-align:1px;width:26px;height:26px;margin-right:8px;border-radius:6px;background:var(--mint);color:var(--navy);font-size:15px;font-weight:700}
+header.top{background:var(--navy);border-bottom:1px solid #1d3550}
+header.top .brand{color:#ffffff}
+header.top .brand span{color:var(--mint)}
+header.top nav a{color:#cfe3f4}
+.hero{background-color:var(--navy);color:#e8f1f8;max-width:none;margin:0;padding-left:max(16px,calc((100% - 948px)/2));padding-right:max(16px,calc((100% - 948px)/2));
+  background-image:radial-gradient(rgba(52,211,153,.18) 1px,transparent 1px);background-size:18px 18px;border-top:0}
+.hero h1{color:#ffffff;letter-spacing:-.015em}
+.hero p.lead,.hero .hint,.hero p{color:#c4d6e6}
+.hero .btn{background:var(--mint);color:var(--navy)}
+.hero .btn.alt{background:transparent;color:#ffffff;border:2px solid #7fa6c6}
+.hero a{color:var(--mint)}
+.btn{border-radius:6px}
+.card{border-top:3px solid var(--accent)}
+.price{color:var(--accent)}
+:focus-visible{outline:3px solid #2563eb}
+.hero :focus-visible,header.top :focus-visible{outline-color:var(--mint)}
