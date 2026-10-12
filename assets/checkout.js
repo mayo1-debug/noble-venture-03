@@ -23,7 +23,7 @@
   s.src = "https://www.paypal.com/sdk/js?client-id=" + encodeURIComponent(C.PAYPAL_CLIENT_ID) +
     "&currency=" + encodeURIComponent(C.CURRENCY || "EUR") + "&intent=capture&components=buttons";
   s.setAttribute("data-namespace", "paypal");
-  s.onerror = function () { say("PayPal could not load. Check your connection or ad blocker and reload the page."); t("checkout_error"); };
+  s.onerror = function () { say("PayPal could not load. Check your connection or ad blocker and reload the page."); t("paypal_blocked"); };
   s.onload = function () {
     window.paypal.Buttons({
       style: { layout: "vertical", label: "pay" },
