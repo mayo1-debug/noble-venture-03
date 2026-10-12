@@ -56,7 +56,7 @@
         return actions.order.capture().then(function (d) {
           if (d && d.status === "COMPLETED") {
             try { localStorage.setItem("sak_unlock", JSON.stringify({ order: d.id, at: new Date().toISOString() })); } catch (e) {}
-            t(C.PAYPAL_ENV === "live" ? "purchase" : "purchase_sandbox");
+            t(C.PAYPAL_ENV === "live" ? "payment_complete" : "payment_complete_sandbox");
             var th = document.getElementById("thanks");
             th.hidden = false;
             th.innerHTML = "<strong>Payment received. Thank you.</strong> Your order ID is <code>" + d.id + "</code>. Keep it: it unlocks the kit on another device, and support needs it if anything is missing. <a class=\"btn\" href=\"kit/?thanks=1\">Open your kit</a>";
