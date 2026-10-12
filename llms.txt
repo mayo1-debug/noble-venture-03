@@ -31,4 +31,5 @@
 - [AI tool questions in a security questionnaire: policy, client data, subprocessors](https://security.toolkitsdesk.com/guides/ai-tools.html): The 3 ai tools questions in the kit, what the client wants to know and what a good answer contains.
 - [How to answer a security questionnaire as a small software company](https://security.toolkitsdesk.com/guides/how-to-answer-a-security-questionnaire.html): Six steps for a small team: overview first, mark what is true, honest answers for gaps with a date, reuse.
 - [Free Security Overview builder for small vendors](https://security.toolkitsdesk.com/guides/free-security-overview-builder.html): Free in-browser tool: a one-page Security Overview and a gap list with fix steps. Nothing is uploaded.
+- [No SOC 2 report? How a small vendor answers the certification question](https://security.toolkitsdesk.com/guides/no-soc-2-report-what-to-answer.html): What to answer when a client asks for SOC 2 or ISO 27001 and you hold neither.
 - [Security questionnaire guides for small software companies](https://security.toolkitsdesk.com/guides/): hub page that lists every guide.
