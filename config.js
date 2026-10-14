@@ -9,6 +9,7 @@ window.NOBLE_CONFIG = {
   DELIVERY_URL: "",               // address of the delivery worker (see docs/delivery-worker.md). Empty means the kit opens as before, with no server check.
   GOATCOUNTER_CODE: "",           // e.g. "noblekit" for noblekit.goatcounter.com. Empty means GoatCounter is off.
   COUNTER_NAMESPACE: "noble-venture-03", // account-free event counter (abacus.jasoncameron.dev). Empty means off.
+  BUTTONDOWN_USERNAME: "",        // Buttondown username for the newsletter form (noble/PING.md). Empty means the form is hidden.
   SUPPORT_EMAIL: "support.toolkits.desk@gmail.com"               // owner sets a support address (see noble/PING.md). Empty shows the fallback contact.
 };
 window.NOBLE_CONFIG.PAYPAL_CLIENT_ID =

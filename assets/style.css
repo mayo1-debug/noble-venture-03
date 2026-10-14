@@ -112,3 +112,10 @@ header.top nav a{color:#cfe3f4}
 .price{color:var(--accent)}
 :focus-visible{outline:3px solid #2563eb}
 .hero :focus-visible,header.top :focus-visible{outline-color:var(--mint)}
+
+/* Newsletter sign-up (hidden until BUTTONDOWN_USERNAME is set in config.js) */
+.newsletter{margin-top:40px;border-top:1px solid var(--line);padding-top:20px}
+.newsletter[hidden]{display:none}
+.newsletter-form{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.newsletter-form label{position:absolute;left:-9999px}
+.newsletter-form input[type=email]{flex:1 1 220px;min-height:44px;padding:8px 10px;font:inherit;border:1px solid var(--line);border-radius:6px}
