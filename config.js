@@ -6,6 +6,7 @@ window.NOBLE_CONFIG = {
   PAYPAL_CLIENT_ID_LIVE: "BAATHyWOzpdh0unmjeb7uu-84aM0mQWCr_65O14OLTVVSeBWqr9B1CuaN9Aa2b3AleP0Kb6oKt2NfWq-3M",    // owner pastes the Live client id here (see noble/PING.md)
   CURRENCY: "EUR",
   PRICE: "49.00",                // kit price in CURRENCY, no VAT charged (Section 19 UStG)
+  DELIVERY_URL: "",               // address of the delivery worker (see docs/delivery-worker.md). Empty means the kit opens as before, with no server check.
   GOATCOUNTER_CODE: "",           // e.g. "noblekit" for noblekit.goatcounter.com. Empty means GoatCounter is off.
   COUNTER_NAMESPACE: "noble-venture-03", // account-free event counter (abacus.jasoncameron.dev). Empty means off.
   SUPPORT_EMAIL: "support.toolkits.desk@gmail.com"               // owner sets a support address (see noble/PING.md). Empty shows the fallback contact.
