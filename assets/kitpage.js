@@ -77,6 +77,12 @@
     return;
   }
   if (C.DELIVERY_URL) { deliver(u.order, function () { openKit(u); }); return; }
+  if (!window.SAK.answers || !window.SAK.policies || !window.SAK.emails) {
+    var cm = document.getElementById("checking-msg");
+    document.getElementById("checking").hidden = false;
+    cm.textContent = "The kit content is not available on this page right now. Contact support with your order ID " + u.order + ".";
+    return;
+  }
   openKit(u);
 
   function openKit(u) {
